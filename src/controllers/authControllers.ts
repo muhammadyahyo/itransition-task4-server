@@ -24,7 +24,7 @@ const signUp = async (request: Request, response: Response) => {
     }
 
     const hashPassword = bcrypt.hashSync(password, 6);
-    const todayDate = new Date().toLocaleString('ru-RU');
+    const todayDate = new Date().toLocaleString('uz-Latn-UZ');
     const newUser = new User({
       username,
       email,
